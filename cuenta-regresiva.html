@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Cuenta Regresiva</title>
+<script type="text/javascript">
+			
+			//cambiar configuración
+			
+			año=2019;
+			mes=2;
+			dia=13;
+			hora=14;
+			minuto=50;
+			segundo=0;
+			urlsitio = ''; //url del sitio web final			
+
+			dateFuture = new Date(año, mes-1 , dia, hora, minuto, segundo);		
+			window.onload=function(){GetCount();}
+		
+		</script>
+<style type="text/css">
+			
+			/*cambiar estilos*/
+			
+			#contenedor{
+				margin: 20px auto;
+				width: 600px;
+				text-align: center;
+			}
+			#textosuperior{
+				margin-top: 20px;
+				font-family: Arial;
+				font-size: 20px;
+				color: #f05152;
+			}
+			#countbox{
+				font-size: 30px;
+				font-family:Tahoma;
+				background: #f05152;
+				color: #fff;
+				padding: 10px 0;
+				margin: 20px auto 0;
+			}
+			#textoinferior{
+				font-size: 20px;
+				font-family: Arial;
+				margin-top: 20px;
+				color: #f05152;
+			}
+			
+		</style>
+</head>
+<body>
+<img src="cooper.jpg" width="1280" style="/>
+<div id="contenedor">
+
+
+
+<div id="textosuperior">
+<h1>Solo faltan </h1>
+</div>
+<div id="countbox"></div>
+
+<div id="textoinferior">
+<h1>para liberar a la bestia...</h1>
+<img src="ready.gif" width="380"/>
+</div>
+</div>
+</body>
+<script type="text/javascript">
+		// Codigo de http://countdown.onlineclock.net/
+		function GetCount(){
+		
+		        dateNow = new Date();                                             
+		        amount = dateFuture.getTime() - dateNow.getTime();                
+		        delete dateNow;
+		
+		        if(amount < 0){
+						location.href=urlsitio;
+		        }
+		        else{
+		                days=0;hours=0;mins=0;secs=0;out="";
+		
+		                amount = Math.floor(amount/1000);
+		
+		                days=Math.floor(amount/86400);
+		                amount=amount%86400;
+		
+		                hours=Math.floor(amount/3600);
+		                amount=amount%3600;
+		
+		                mins=Math.floor(amount/60);
+		                amount=amount%60;
+		
+		                secs=Math.floor(amount);
+		
+		                if(days != 0){out += days +" dia"+((days!=1)?"s":"")+", ";}
+		                if(days != 0 || hours != 0){out += hours +" hora"+((hours!=1)?"s":"")+", ";}
+		                if(days != 0 || hours != 0 || mins != 0){out += mins +" minuto"+((mins!=1)?"s":"")+", ";}
+		                out += secs +" segundos";
+		                document.getElementById('countbox').innerHTML=out;
+		
+		                setTimeout("GetCount()", 1000);
+		        }
+		}
+		</script>
+</html>
