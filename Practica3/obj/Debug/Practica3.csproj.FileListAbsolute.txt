@@ -1,0 +1,9 @@
+C:\Users\FESAC\Source\Repos\fesac4\Practica3\bin\Debug\Practica3.exe.config
+C:\Users\FESAC\Source\Repos\fesac4\Practica3\bin\Debug\Practica3.exe
+C:\Users\FESAC\Source\Repos\fesac4\Practica3\bin\Debug\Practica3.pdb
+C:\Users\FESAC\Source\Repos\fesac4\Practica3\obj\Debug\Practica3.csprojAssemblyReference.cache
+C:\Users\FESAC\Source\Repos\fesac4\Practica3\obj\Debug\Practica3.Properties.Resources.resources
+C:\Users\FESAC\Source\Repos\fesac4\Practica3\obj\Debug\Practica3.csproj.GenerateResource.cache
+C:\Users\FESAC\Source\Repos\fesac4\Practica3\obj\Debug\Practica3.csproj.CoreCompileInputs.cache
+C:\Users\FESAC\Source\Repos\fesac4\Practica3\obj\Debug\Practica3.exe
+C:\Users\FESAC\Source\Repos\fesac4\Practica3\obj\Debug\Practica3.pdb
